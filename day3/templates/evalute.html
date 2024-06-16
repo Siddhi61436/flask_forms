@@ -1,0 +1,12 @@
+{% extends "layout.html" %}
+
+{% block content %}
+<h2>Given enumber {{number}}</h2>
+{% if number ==0%}
+<P>Given input is either even nor odd</P>
+{% elif number %2 ==0%}
+<P>Given input is either even </p>
+{%else%}
+<P>Given number is odd</P>
+{%endif%}
+{%endblock%}
